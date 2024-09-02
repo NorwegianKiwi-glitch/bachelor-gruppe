@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentralisert Kort</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        .animate-slide-in {
+            animation: slideIn 1s ease-out forwards;
+        }
+        .glow-box {
+            box-shadow: 0 0px 30px rgba(99, 102, 241, 0.6); /* Indigo glow */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 flex items-center justify-center p-20">
+    <div class="text-center">
+        <h1 class="text-4xl font-bold text-indigo-500 animate-slide-in mb-8">
+            Våre tanker
+        </h1>
+        <div class="bg-gray-800 rounded-xl md:max-w-2xl mx-auto animate-slide-in glow-box">
+            <div class="md:flex">
+                <div class="md:shrink-0">
+                    <img class="h-48 w-full object-cover md:h-full md:w-48" src="back-end-concept-illustration.png" alt="bilde">
+                </div>
+                <div class="p-12">
+                    <div class="uppercase text-4xl tracking-wide text-indigo-500 font-semibold">Våre ambisjoner</div>
+                    <p class="mt-2 text-slate-500">BLAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAA   BLAAAAAAAAAAAAAAAAAAAAAAA BLAAAAAAAAAAAAAAAAAAAAA LBAAAAAAAAAAAAAAAAAAA BLAAAAAAAAAAAAAAAAAAAA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

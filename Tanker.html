@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sentralisert Kort</title>
+    <title>Våre tanker</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @keyframes slideIn {
@@ -16,30 +16,105 @@
                 opacity: 1;
             }
         }
+
+        @keyframes slideIn2 {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn3 {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn4 {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
         .animate-slide-in {
             animation: slideIn 1s ease-out forwards;
         }
+        .animate-slide-in2 {
+            animation: slideIn2 1s ease-out forwards;
+        }
+        .animate-slide-in3 {
+            animation: slideIn3 1s ease-out forwards;
+        }
+        .animate-slide-in4 {
+            animation: slideIn4 1s ease-out forwards;
+        }
         .glow-box {
-            box-shadow: 0 0px 30px rgba(99, 102, 241, 0.6); /* Indigo glow */
+            box-shadow: 0 0px 30px rgba(99, 102, 241, 0.6); 
         }
     </style>
 </head>
 <body class="bg-gray-900 flex items-center justify-center p-20">
     <div class="text-center">
-        <h1 class="text-4xl font-bold text-indigo-500 animate-slide-in mb-8">
+        <h1 class="text-8xl font-bold text-indigo-500 animate-slide-in2 mb-8">
             Våre tanker
         </h1>
+        <div class= "space-y-8"> 
         <div class="bg-gray-800 rounded-xl md:max-w-2xl mx-auto animate-slide-in glow-box">
-            <div class="md:flex">
-                <div class="md:shrink-0">
-                    <img class="h-48 w-full object-cover md:h-full md:w-48" src="back-end-concept-illustration.png" alt="bilde">
+           
+            
+                <div class="md:flex">
+                    <div class="md:shrink-0">
+                        <img class="h-48 w-full object-cover md:h-full md:w-48" src="back-end-concept-illustration.png" alt="bilde">
+                    </div>
+                    <div class="p-12">
+                        <div class="uppercase text-4xl tracking-wide text-indigo-500 font-semibold">Hvem er vi</div>
+                        <p class="mt-2 text-slate-500">Gruppe 4 i IS-310 er dette semesteret satt sammen av fem gutter. Vi som gruppe er en samling av robuste karer med bakgrunn fra sør til vest, og nord til øst. Egenskaper og ferdigheter streker seg diverse innad gruppen noe som gir gruppen mulige læringspotensialet.</p>
+                    </div>
                 </div>
-                <div class="p-12">
-                    <div class="uppercase text-4xl tracking-wide text-indigo-500 font-semibold">Våre ambisjoner</div>
-                    <p class="mt-2 text-slate-500">BLAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAA   BLAAAAAAAAAAAAAAAAAAAAAAA BLAAAAAAAAAAAAAAAAAAAAA LBAAAAAAAAAAAAAAAAAAA BLAAAAAAAAAAAAAAAAAAAA</p>
-                </div>
+
+            
+        </div>
+        <div class="bg-gray-800 rounded-xl md:max-w-2xl mx-auto animate-slide-in4 glow-box">
+           
+        <div class="md:flex">
+            <div class="md:shrink-0">
+                <img class="h-48 w-full object-cover md:h-full md:w-48" src="back-end-concept-illustration.png" alt="bilde">
+            </div>
+            <div class="p-12">
+                <div class="uppercase text-4xl tracking-wide text-indigo-500 font-semibold">Motiverte og engasjerte</div>
+                <p class="mt-2 text-slate-500">Sammen skal vi som en engasjert gruppe planlegge et bacheloreprosjekt mot våren 2025. Prosjekter gruppen kunne forestilt seg i må by på gode muligheter for teknisk arbeid hvor alle av gruppens medlemmer kan få prøve seg ut med praktisk arbeid, lære og bygge erfaringer.</p>
             </div>
         </div>
+       </div>
+      
+      <div class="bg-gray-800 rounded-xl md:max-w-2xl mx-auto animate-slide-in glow-box">
+           
+        <div class="md:flex">
+            <div class="md:shrink-0">
+                <img class="h-48 w-full object-cover md:h-full md:w-48" src="back-end-concept-illustration.png" alt="bilde">
+            </div>
+            <div class="p-12">
+                <div class="uppercase text-4xl tracking-wide text-indigo-500 font-semibold">Våre ambisjoner</div>
+                <p class="mt-2 text-slate-500">Vi som gruppen er sammensatt av motiverte studenter med en solid arbeidsmoral, som resultat av dette streker ambisjonene seg sterkt. Gruppen kan se det som en forventning og aspirere mot en høyere måloppnåelse.</p>
+            </div>
+        </div>
+       </div>
+    </div>
     </div>
 </body>
+
 </html>

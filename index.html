@@ -7,6 +7,67 @@
 	<title>My Project</title>
 	<link href="/dist/styles.css" rel="stylesheet">
 	<script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn2 {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn3 {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn4 {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        .animate-slide-in {
+            animation: slideIn 1s ease-out forwards;
+        }
+        .animate-slide-in2 {
+            animation: slideIn2 1s ease-out forwards;
+        }
+        .animate-slide-in3 {
+            animation: slideIn3 1s ease-out forwards;
+        }
+        .animate-slide-in4 {
+            animation: slideIn4 1s ease-out forwards;
+        }
+        .glow-box {
+            box-shadow: 0 0px 30px rgba(99, 102, 241, 0.6); 
+        }
+    </style>
 </head>
 
 <body class="bg-gray-900 p-10">
@@ -29,7 +90,7 @@
       <h1 class="text-4xl font-bold text-center text-white mb-8">Vårt bachelor team</h1>
 
       <!-- Team Member 1 -->
-      <div class="bg-gray-800 p-6 rounded-lg shadow-md mb-6 flex flex-col md:flex-row items-center md:items-start border border-red-500">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-md mb-6 flex flex-col md:flex-row items-center md:items-start border border-red-500 animate-slide-in">
           <img src="src/pics/SimonHelgen.png" alt="Simon Helgen" class="w-40 h-40 rounded-full mb-4 md:mb-0 md:mr-6">
           <div class="text-center md:text-left">
               <h2 class="text-2xl font-semibold text-white">Simon Helgen</h2>
@@ -58,7 +119,7 @@
       </div>
 
       <!-- Team Member 2 -->
-      <div class="bg-gray-800 p-6 rounded-lg shadow-md mb-6 flex flex-col md:flex-row-reverse items-center md:items-start border border-blue-500">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-md mb-6 flex flex-col md:flex-row-reverse items-center md:items-start border border-blue-500 animate-slide-in4">
           <img src="src/pics/Rune_Linkdin.jpg" alt="Rune Undheim" class="w-40 h-40 rounded-full mb-4 md:mb-0 md:ml-6">
           <div class="text-center md:text-left">
               <h2 class="text-2xl font-semibold text-white">Rune Undheim</h2>
@@ -83,7 +144,7 @@
       </div>
 
       <!-- Team Member 3 -->
-      <div class="bg-gray-800 p-6 rounded-lg shadow-md mb-6 flex flex-col md:flex-row items-center md:items-start border border-green-500">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-md mb-6 flex flex-col md:flex-row items-center md:items-start border border-green-500 animate-slide-in">
           <img src="src/pics/LarsUtklev.png" alt="Team Member 3" class="w-40 h-40 rounded-full mb-4 md:mb-0 md:mr-6">
           <div class="text-center md:text-left">
               <h2 class="text-2xl font-semibold text-white">Lars Fredrik Utklev</h2>
@@ -106,7 +167,7 @@
       </div>
 
       <!-- Team Member 4 -->
-      <div class="bg-gray-800 p-6 rounded-lg shadow-md mb-6 flex flex-col md:flex-row-reverse items-center md:items-start border border-yellow-500">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-md mb-6 flex flex-col md:flex-row-reverse items-center md:items-start border border-yellow-500 animate-slide-in4">
           <img src="src/pics/Johannes_Aslaksen.png" alt="Team Member 4" class="w-50 h-40 rounded-full mb-4 md:mb-0 md:ml-6">
           <div class="text-center md:text-left">
               <h2 class="text-2xl font-semibold text-white">Johannes Manuel Aslaksen</h2>
@@ -128,17 +189,26 @@
       </div>
 
       <!-- Team member 5 -->
-      <div class="bg-gray-800 p-6 rounded-lg shadow-md mb-6 flex flex-col md:flex-row items-center md:items-start border border-green-500">
-		<img src="https://via.placeholder.com/150" alt="Team Member 3" class="w-40 h-40 rounded-full mb-4 md:mb-0 md:mr-6">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-md mb-6 flex flex-col md:flex-row items-center md:items-start border border-indigo-500 animate-slide-in">
+		<img src="src/pics/Sebastiangj.jpg" alt="Team Member 5" class="w-40 h-40 rounded-full mb-4 md:mb-0 md:mr-6">
 		<div class="text-center md:text-left">
-			<h2 class="text-2xl font-semibold text-white">Alex Johnson</h2>
-			<p class="text-sm text-gray-400 mb-2">UI/UX Designer</p>
+			<h2 class="text-2xl font-semibold text-white">Sebastian Garcia Jessen</h2>
 			<p class="text-gray-300">
-			  Lorem ipsum odor amet, consectetuer adipiscing elit. Enim cursus viverra et ullamcorper vestibulum. Vulputate per penatibus lacinia lectus semper non porta at vel. Curabitur posuere at dis, id elit dolor dapibus dignissim. Nibh vivamus aenean bibendum mauris nostra. Litora ante aliquet conubia odio integer gravida tristique. Pharetra amet elementum aptent augue fermentum urna id cursus? Et feugiat id felis justo libero suscipit molestie. Lacinia orci consectetur lobortis lobortis interdum vel at laoreet.
-
-			  Faucibus ultricies dictum magna class adipiscing malesuada erat. In mauris interdum commodo odio orci. Elit mollis elit euismod torquent volutpat libero. Amet habitasse nascetur consequat cubilia dictumst maximus. Suscipit habitasse leo aliquet facilisis, tempor eget volutpat. Maximus integer erat fusce placerat lacinia tempus in fermentum. Ex taciti nunc duis tristique habitant; per ridiculus posuere?
-			</p>
+                Jeg er 21 år og kommer fra Arendal. Jeg går mitt siste år på IT og informasjonssystemet. 
+                <br>
+                <br>
+                Mine interesser er programmering i C++, python, php og C#(.net). Jeg liker også å jobbe med egne prosjekter innen IOT, 3D modelling og systemer. Jeg liker å trene kampsport, har svart belte i karate og gamer.
+                <br>
+                <br>
+                Tidligere har jeg vært Software engineer hos Align Racing, Bartender hos Madam reiersen i Arendal og er nå læringsassistent for tredje semester i IT og informasjonssystemer.
+                <div class="flex">
+                  <button><a href="https://www.linkedin.com/in/sebastian-garcia-jessen">
+                  <img src="src/logo/LinkedIn_logo_initials.png" width="50" height="50">
+                  </a></button>
+                </div>
 		</div>
 	</div>
+
+    
 </body>
 </html>

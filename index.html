@@ -7,6 +7,22 @@
 	<title>My Project</title>
 	<link href="/dist/styles.css" rel="stylesheet">
 	<script src="https://cdn.tailwindcss.com"></script>
+  <style>
+            @keyframes slideIn2 {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-slide-in2 {
+            animation: slideIn2 1s ease-out forwards;
+        }
+  </style>
 </head>
 
 <body class="bg-gray-900 p-10">
@@ -26,7 +42,9 @@
 	</br>
 
     <div class="max-w-4xl mx-auto">
-      <h1 class="text-4xl font-bold text-center text-white mb-8">Vårt bachelor team</h1>
+      <h1 class="text-8xl font-bold text-indigo-500 animate-slide-in2 mb-8">
+        Vårt bachelor team
+      </h1>
 
       <!-- Team Member 1 -->
       <div class="bg-gray-800 p-6 rounded-lg shadow-md mb-6 flex flex-col md:flex-row items-center md:items-start border border-red-500">
